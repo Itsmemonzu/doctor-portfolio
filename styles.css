@@ -263,8 +263,6 @@ h1 .ln + .ln { margin-left: 1.15em; }
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 0 50px rgba(0,0,0,.55);
   color: var(--on-room);
 }
-.office { position: relative; }
-.office .clip { top: -2px; }
 .office.is-open .bezel { box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 2px 6px rgba(0,0,0,.6), var(--glow); }
 .office.is-open .opal-card { color: var(--ink); }
 .office h3 { font-weight: 300; font-size: clamp(2rem, 3.6vw, 3.2rem); letter-spacing: -0.04em; line-height: 1; margin: 2.2rem 0 1rem; }
@@ -297,9 +295,9 @@ h1 .ln + .ln { margin-left: 1.15em; }
 
 /* Writing */
 .works { border-bottom: 1px solid var(--room-line); }
-.works li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, auto); gap: .3rem clamp(1rem, 3vw, 2.5rem); align-items: baseline; padding-block: 1.4rem; border-top: 1px solid var(--room-line); }
-.works .title { font-size: clamp(1.25rem, 2vw, 1.75rem); letter-spacing: -0.025em; line-height: 1.2; }
-.works .venue { color: var(--on-room-2); font-size: .95rem; text-align: right; }
+.works li { display: grid; gap: .35rem; padding-block: 1.4rem; border-top: 1px solid var(--room-line); }
+.works .title { font-size: clamp(1.25rem, 2vw, 1.75rem); letter-spacing: -0.025em; line-height: 1.2; max-width: 34em; }
+.works .venue { color: var(--on-room-2); font-size: .95rem; }
 
 /* Find me: rows light up like the panel (hover, keyboard, and touch) */
 .find li { border-top: 1px solid var(--room-line); }
@@ -355,8 +353,6 @@ h1 .ln + .ln { margin-left: 1.15em; }
   .film-read { max-width: 22rem; width: 78%; margin: .5rem auto 0; }
   .office-row { grid-template-columns: 1fr; }
   .strip { grid-template-columns: 1fr 1fr; row-gap: 2.5rem; }
-  .works li { grid-template-columns: 1fr; }
-  .works .venue { text-align: left; }
   .find a { grid-template-columns: minmax(0, 1fr) auto; gap: .2rem 1rem; }
   .find .handle { grid-column: 1; }
   .find .i { grid-column: 2; grid-row: 1 / span 2; }
