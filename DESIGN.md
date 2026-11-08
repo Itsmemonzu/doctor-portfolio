@@ -1,5 +1,5 @@
 ---
-name: Dr. Amina Rahim, Neurologist
+name: Dr. Name, Neurologist
 description: A one-page practice portfolio set in a dark reading room, where only the film viewers give off light.
 colors:
   room: "#0a0c0d"
@@ -157,7 +157,7 @@ components:
     size: "0.55rem"
 ---
 
-# Design System: Dr. Amina Rahim, Neurologist
+# Design System: Dr. Name, Neurologist
 
 ## Overview
 
