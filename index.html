@@ -34,14 +34,14 @@
 
   <div class="hero-grid">
     <div class="intro">
-      <h1><span class="dr">Dr.</span><span class="ln">Amina</span><span class="ln">Rahim</span></h1>
+      <h1><span class="ln">Dr. Amina</span><span class="ln">Rahim</span></h1>
       <p class="role">Board-certified neurologist. Headache, epilepsy and stroke care for adults in Manhattan and Brooklyn.</p>
       <p class="avail">
         <span>Accepting new patients</span>
         <svg class="grease" viewBox="0 0 260 64" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18 40C14 20 70 8 132 8c64 0 118 8 120 26 2 18-60 24-124 24C66 58 10 52 12 32 14 18 52 10 92 9"/></svg>
       </p>
       <div class="actions">
-        <a class="btn btn-lit" href="tel:+12125550142">Book a consultation <svg class="i"><use href="#arr-r"/></svg></a>
+        <a class="btn btn-lit" href="tel:+12125550142">Call to book <span class="btn-num">(212) 555-0142</span></a>
         <a class="btn btn-line" href="sms:+12125550142">Text the office</a>
       </div>
       <ul class="socials" aria-label="Social profiles">
@@ -57,12 +57,12 @@
         <div class="opal">
           <div class="film film-portrait">
             <span class="clip" aria-hidden="true"></span>
-            <img src="assets/portrait.jpg" width="1400" height="2100" alt="Dr. Amina Rahim, seated, in a white suit with a stethoscope.">
+            <img src="assets/portrait-film.jpg" width="978" height="1466" alt="Portrait of Dr. Amina Rahim.">
             <span class="edge" aria-hidden="true">RAHIM, A. · NEUROLOGY · NEW YORK NY</span>
           </div>
           <div class="film film-scan" aria-hidden="true">
             <span class="clip"></span>
-            <img src="assets/mri-a.jpg" width="1080" height="1080" alt="">
+            <img src="assets/mri-a.jpg" width="800" height="800" alt="">
             <span class="edge">AX T2 · 10/24 · R</span>
           </div>
         </div>
@@ -92,8 +92,8 @@
           <div class="opal opal-reader">
             <div class="film film-read">
               <span class="clip" aria-hidden="true"></span>
-              <img src="assets/mri-b.jpg" width="1080" height="1080" alt="Axial MRI slice of a brain, shown as an example film.">
-              <span class="edge" aria-hidden="true">AX T2 · 15/24</span>
+              <img data-r="film" src="assets/mri-b.jpg" width="800" height="800" alt="Example film: axial MRI at the level of the lateral ventricles.">
+              <span class="edge" data-r="edge" aria-hidden="true">AX T2 · 15/24 · VENTRICLES</span>
             </div>
             <div class="read-text" aria-live="polite">
               <h3 data-r="title">Headache &amp; migraine</h3>
@@ -110,7 +110,7 @@
     <h2 id="h-offices" class="sec-title">Offices</h2>
     <div class="office-row">
       <article class="office" data-hours='{"1":[9,17],"2":[9,17],"3":[9,17],"4":[9,17]}'>
-        <div class="bezel"><div class="opal opal-card">
+        <div class="bezel"><span class="clip" aria-hidden="true"></span><div class="opal opal-card">
           <p class="status" aria-live="polite">Monday to Thursday</p>
           <h3>Upper East Side</h3>
           <p class="addr">210 East 64th Street, Suite 4B<br>New York, NY 10065</p>
@@ -127,7 +127,7 @@
       </article>
 
       <article class="office" data-hours='{"5":[8,13]}'>
-        <div class="bezel"><div class="opal opal-card">
+        <div class="bezel"><span class="clip" aria-hidden="true"></span><div class="opal opal-card">
           <p class="status" aria-live="polite">Friday mornings</p>
           <h3>Brooklyn Heights</h3>
           <p class="addr">142 Joralemon Street, 2nd floor<br>Brooklyn, NY 11201</p>
@@ -158,10 +158,11 @@
 
   <section class="sec writing" id="writing" aria-labelledby="h-writing">
     <h2 id="h-writing" class="sec-title">Writing &amp; talks</h2>
+    <!-- Placeholder entries: wrap each row in a link once real URLs exist. -->
     <ul class="works">
-      <li><a href="#"><span class="kind">Talk</span><span class="title">When a headache needs a scan, and when it doesn't</span><span class="venue">Placeholder Neurology Forum, 2025</span><svg class="i"><use href="#arr"/></svg></a></li>
-      <li><a href="#"><span class="kind">Essay</span><span class="title">Living with epilepsy in a city that never stops</span><span class="venue">Placeholder Health Weekly, 2024</span><svg class="i"><use href="#arr"/></svg></a></li>
-      <li><a href="#"><span class="kind">Video</span><span class="title">Recognising a stroke in under a minute</span><span class="venue">YouTube, 2024</span><svg class="i"><use href="#arr"/></svg></a></li>
+      <li><span class="title">When a headache needs a scan, and when it doesn't</span><span class="venue">Talk · Placeholder Neurology Forum, 2025</span></li>
+      <li><span class="title">Living with epilepsy in a city that never stops</span><span class="venue">Essay · Placeholder Health Weekly, 2024</span></li>
+      <li><span class="title">Recognising a stroke in under a minute</span><span class="venue">Video · YouTube, 2024</span></li>
     </ul>
   </section>
 </main>
@@ -178,7 +179,7 @@
   </ul>
   <div class="colophon">
     <p>In an emergency, call 911. Messages are answered during office hours.</p>
-    <p class="ph">Placeholder profile: name, photo, credentials, offices and links are examples. Portrait via Unsplash. MRI films by 511KeV, CC BY-SA 4.0, Wikimedia Commons.</p>
+    <p class="ph">Placeholder profile: name, photo, credentials, offices and links are examples. Portrait: Unsplash photo 1607746882042, cropped and toned as film. MRI films: "MRI Brain T2 Axial" series by 511KeV via <a href="https://commons.wikimedia.org/wiki/File:MRI_Brain_T2_Axial_(10).jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, resized.</p>
   </div>
 </footer>
 
@@ -211,14 +212,16 @@
   }
   tick(); setInterval(tick, 30000);
 
+  // [title, body, first visit, film, edge printing, alt]
   var data = [
-    ['Headache & migraine', 'Chronic and medication-overuse headache, migraine with aura, and preventive treatment that cuts the number of bad days.', 'A full headache history, a neurological exam, and a written prevention plan. Imaging only when it changes the answer.'],
-    ['Epilepsy', 'First-seizure assessment, EEG review, and long-term medication care, including planning around pregnancy and driving.', 'A detailed account of the events (bring a witness or a phone video if you can), an exam, and a decision on EEG and MRI.'],
-    ['Stroke', 'Secondary prevention and recovery follow-up after discharge: blood pressure, rhythm, clot risk, and rehabilitation goals.', 'A review of your hospital records and scans, a medication check, and a prevention plan shared with your primary care doctor.'],
-    ['Movement disorders', 'Tremor, early Parkinson’s disease, and medication-related movement problems.', 'A timed examination of tremor and gait, a medication review, and a plan for what to watch over the next three months.'],
-    ['Nerve & muscle', 'Numbness, tingling, neuropathy and weakness, with nerve conduction studies in the office.', 'An exam focused on where the symptoms sit, blood tests for treatable causes, and nerve studies booked if needed.'],
-    ['Sleep', 'Insomnia, restless legs, and excessive daytime sleepiness with a neurological cause.', 'A two-week sleep diary review and a screen for sleep apnea before any medication is discussed.']
+    ['Headache & migraine', 'Chronic and medication-overuse headache, migraine with aura, and preventive treatment that cuts the number of bad days.', 'A full headache history, a neurological exam, and a written prevention plan. Imaging only when it changes the answer.', 'mri-b', 'AX T2 · 15/24 · VENTRICLES', 'at the level of the lateral ventricles'],
+    ['Epilepsy', 'First-seizure assessment, EEG review, and long-term medication care, including planning around pregnancy and driving.', 'A detailed account of the events (bring a witness or a phone video if you can), an exam, and a decision on EEG and MRI.', 'mri-8', 'AX T2 · 08/24 · TEMPORAL LOBES', 'through the temporal lobes'],
+    ['Stroke', 'Secondary prevention and recovery follow-up after discharge: blood pressure, rhythm, clot risk, and rehabilitation goals.', 'A review of your hospital records and scans, a medication check, and a prevention plan shared with your primary care doctor.', 'mri-11', 'AX T2 · 11/24 · BASAL GANGLIA', 'through the basal ganglia'],
+    ['Movement disorders', 'Tremor, early Parkinson’s disease, and medication-related movement problems.', 'A timed examination of tremor and gait, a medication review, and a plan for what to watch over the next three months.', 'mri-5', 'AX T2 · 05/24 · POSTERIOR FOSSA', 'through the brainstem and cerebellum'],
+    ['Nerve & muscle', 'Numbness, tingling, neuropathy and weakness, with nerve conduction studies in the office.', 'An exam focused on where the symptoms sit, blood tests for treatable causes, and nerve studies booked if needed.', 'mri-3', 'AX T2 · 03/24 · SKULL BASE', 'at the skull base'],
+    ['Sleep', 'Insomnia, restless legs, and excessive daytime sleepiness with a neurological cause.', 'A two-week sleep diary review and a screen for sleep apnea before any medication is discussed.', 'mri-20', 'AX T2 · 20/24 · VERTEX', 'near the top of the head']
   ];
+  data.forEach(function (d) { var im = new Image(); im.src = 'assets/' + d[3] + '.jpg'; });
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.reader-list [role=tab]'));
   var panel = document.getElementById('readout');
   var box = panel.querySelector('.read-text');
@@ -229,6 +232,11 @@
     box.querySelector('[data-r=title]').textContent = data[i][0];
     box.querySelector('[data-r=body]').textContent = data[i][1];
     box.querySelector('[data-r=visit]').textContent = data[i][2];
+    var film = panel.querySelector('[data-r=film]');
+    film.src = 'assets/' + data[i][3] + '.jpg';
+    film.alt = 'Example film: axial MRI ' + data[i][5] + '.';
+    panel.querySelector('[data-r=edge]').textContent = data[i][4];
+    var f = panel.querySelector('.film-read'); f.classList.remove('swap'); void f.offsetWidth; f.classList.add('swap');
     if (focus) tabs[i].focus();
   }
   tabs.forEach(function (t, i) {
